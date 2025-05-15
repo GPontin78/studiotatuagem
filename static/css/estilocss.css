@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+  }
+  
+  .header-fixo {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+  }
+  
+  nav a {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    margin-top: 70px;
+    padding: 20px;
+  }
+  
+  .galeria img {
+    width: 200px;
+    margin: 10px;
+  }
+  
+  .artista {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .img-tatuador {
+    width: 200px;
+    animation: sorrindo 3s infinite;
+  }
+  
+  @keyframes sorrindo {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  .descricao {
+    position: absolute;
+    left: 220px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .formulario form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 10px;
+  }
+  
+  .botao-agendar {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .botao-agendar:hover {
+    background-color: #e60073;
+    transform: scale(1.1);
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  .formulario {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formulario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  .formulario label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .formulario input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  .formulario input:focus {
+    border-color: #e60073;
+  }
+  
+  .botao-agendar {
+    background-color: #000;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .botao-agendar:hover {
+    background-color: #e60073;
+    transform: scale(1.05);
+  }
+
+  .animacao-tatuagem {
+  display: flex;
+    justify-content: right;
+    margin-bottom: 30px;
+  }
+  
+  .animacao-tatuagem img {
+    width: 170px;
+    animation: sobeDesce 2s ease-in-out infinite;
+  }
+  
+  @keyframes sobeDesce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+  }
+  
+  
+button, .botao-agendar {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  border-radius: 8px;
+}
+
+
+button:hover, .botao-agendar:hover {
+  background-color: #292929;
+  transform: scale(1.08);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.galeria img,
+.artista img,
+.animacao-tatuagem img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.galeria img:hover,
+.artista img:hover,
+.animacao-tatuagem img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.destaque {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.destaque img {
+  width: 250px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.chamada-agende {
+  text-align: center;
+  padding: 30px;
+  background-color: #222;
+  color: #fff;
+}
+
+.chamada-agende a {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.depoimentos {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #fff;
+  border-left: 4px solid #e60073;
+}
+
+.depoimentos blockquote {
+  margin-bottom: 20px;
+  font-style: italic;
+}
